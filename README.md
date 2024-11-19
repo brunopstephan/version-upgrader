@@ -30,7 +30,7 @@ Windows:
 env GOOS="windows" GOARCH="amd64" go build -o "upgrader.exe" cmd/app/main.go 
 ```
 
-Now, just execute the binary inside passing the flags
+Now, just execute the binary passing the flags
 
 - file: mandatory, path to the file to be updated.
 - version_path, optional, path for the version number inside the JSON file, it must be passed like "foo.bar.version_number" where the "version_number", default is "version"
