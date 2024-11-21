@@ -37,11 +37,11 @@ env GOOS="windows" GOARCH="amd64" go build -o "upgrader.exe" cmd/app/main.go
 Now, just execute the binary passing the flags
 
 - file: mandatory, path to the file to be updated.
-- version_path, optional, path for the version number inside the JSON file, it must be passed like "foo.bar.version_number" where the "version_number", default is "version"
+- version_path, optional, path for the version number inside the JSON file, it must be passed like "foo.bar.version_number", default is "version"
 
 <h2 id="use-case">Use case</h2>
 
-My target application is Google Chrome Extension code in Node.js, so i just use [lefthook](https://github.com/evilmartians/lefthook) to set the pre-commit hook and configured to call a node script that's trigger the binary.
+My target application is an Google Chrome Extension code in Node.js, so i just use [lefthook](https://github.com/evilmartians/lefthook) to set the pre-commit hook and configured to call a node script that's trigger the binary.
 
 
 
