@@ -12,9 +12,9 @@ func GetOption() int {
 	prompt := &survey.Select{
 		Message: "Choose an option:",
 		Options: []string{
-			"Breaking Change (updates first number)",
-			"Release/Feature (updates second number)",
-			"Fix/Other (updates third number)",
+			"Breaking Change (X.0.0)",
+			"Release/Feature (0.X.0)",
+			"Fix/Other (0.0.X)",
 			"Don't update",
 		},
 	}
