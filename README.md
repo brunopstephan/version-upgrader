@@ -6,7 +6,8 @@ I made this solution because sometimes in my work, we commit changes and forget 
 
 So, that's a simple way to avoid this mistake (check my <a href="#use-case">use case</a>).
 
-![{F9ACFE9C-FF1F-4B0C-9F3A-8E78DB83A515}](https://github.com/user-attachments/assets/6fe27c67-d730-4e1b-9410-d3800ca9bf09)
+![{0CB440E0-DDFC-40A7-8F3F-88E478C178FC}](https://github.com/user-attachments/assets/3a21dc1b-ef5f-4ab9-be8c-118f686572df)
+
 
 ## Usage
 
@@ -32,6 +33,12 @@ env GOOS="linux" GOARCH="amd64" go build -o "upgrader" cmd/app/main.go
 Windows:
 ```bash
 env GOOS="windows" GOARCH="amd64" go build -o "upgrader.exe" cmd/app/main.go 
+```
+
+Build using Makefile:
+
+```bash
+make all
 ```
 
 Now, just execute the binary passing the flags
