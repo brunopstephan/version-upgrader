@@ -10,7 +10,7 @@ func GetOption() int {
 	var opt string
 	fmt.Println("Select the type of change you want to make:")
 	prompt := &survey.Select{
-		Message: "Chose a option:",
+		Message: "Choose an option:",
 		Options: []string{
 			"Breaking Change (updates first number)",
 			"Release/Feature (updates second number)",
