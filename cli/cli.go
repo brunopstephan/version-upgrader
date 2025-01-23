@@ -26,9 +26,9 @@ func GetOption() int {
 	}
 
 	indexMap := map[string]int{
-		"Breaking Change (updates first number)":  0,
-		"Release/Feature (updates second number)": 1,
-		"Fix/Other (updates third number)":        2,
+		"Breaking Change (X.0.0)":  0,
+		"Release/Feature (0.X.0)": 1,
+		"Fix/Other (0.0.X)":        2,
 		"Don't update":                            -1,
 	}
 
